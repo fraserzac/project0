@@ -1,0 +1,90 @@
+@import url(http://fonts.googleapis.com/css?family=Poiret+One);
+
+body {
+	background-image: url("background.jpg");
+}
+
+.box {
+	border: 1px solid black;
+	border-radius: 5px;
+	width: 50px;
+	height: 50px;
+	float: left;
+	padding: 5px;
+	background-color: white;
+	background-size: cover;
+
+
+}
+/*
+.box:hover { 
+	background-image: url("Bertramgriffin.png");
+	
+}*/
+
+.player-x {
+	background-image: url("Bertramgriffin.png");
+}
+
+.player-o {
+	background-image: url("stewie.gif");
+}
+
+.container {
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	margin: 0 auto;	
+}
+
+h1 {
+	text-align: center;
+	font-family: 'Poiret One', cursive;
+}
+
+h2 {
+	text-align: center;
+}
+
+.button {
+	padding: 5px;
+	margin: 5px;
+	
+}
+
+
+.cl-effect-4 a {
+	padding: 0 0 10px;
+}
+
+.cl-effect-4 a::after {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background: #fff;
+	content: '';
+	opacity: 0;
+	-webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+	-moz-transition: height 0.3s, opacity 0.3s, -moz-transform 0.3s;
+	transition: height 0.3s, opacity 0.3s, transform 0.3s;
+	-webkit-transform: translateY(-10px);
+	-moz-transform: translateY(-10px);
+	transform: translateY(-10px);
+}
+
+.cl-effect-4 a:hover::after,
+.cl-effect-4 a:focus::after {
+	height: 5px;
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	transform: translateY(0px);
+}
+
+
+
+
+
+
