@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" href="animate.min.css">
 	<title>TicTacToe</title>
 </head>
 <body>
 
-	<h1>StewieTacToe</h1>
+	<h1 class="animated bounce">StewieTacToe</h1>
+
 
 	<div class="container">
 		<div class="row1">
@@ -24,8 +26,14 @@
 			<div class="box" id="A9"></div>
 		</div>
 
-	<button class="replyButton">Replay</button>	
+	<input type="button" value="replay" onClick="window.location.reload()">	
 	</div>	
+	
+	<div class="score">
+		<ul>
+			<li class="counter">Counter <input type="text" id="0">
+		</ul>
+	</div>
 
 <script src="jquery-1.11.3.min.js"></script>
 <script src="ttt.js"></script> 
@@ -33,6 +41,8 @@
 <link rel="stylesheet" href="ttts.css">
 
 </body>
+
+
 </html>
 
 
