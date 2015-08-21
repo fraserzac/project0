@@ -7,12 +7,13 @@ body {
 
 @include filter-gradient(#ffff88, #ffff88, vertical);
 @include background-image(linear-gradient(top,  rgba(255,255,136,1) 0%,rgba(255,255,136,1) 100%));
+height: 400px;
 
 }
 
 .box {
-	border: 2px solid black;
-	border-radius: 5px;
+	border: 1px solid black;
+	border-radius: 10%;
 	width: 100px;
 	height: 100px;
 	float: left;
@@ -20,7 +21,6 @@ body {
 	margin: 2px;
 	background-color: white;
 	background-size: cover;
-	box-shadow: 20px;
 }
 
 .player-x {
@@ -33,7 +33,7 @@ body {
 
 .container {
 	width: 375px;
-	height: 500px;
+	height: 400px;
 	text-align: center;	
 	margin: 0 auto;
 }
@@ -42,6 +42,7 @@ h1 {
 	text-align: center;
 	font-family: 'Poiret One', cursive;
 	margin: 30px;
+	font-size: 100px;
 }
 
 h2 {
@@ -50,24 +51,14 @@ h2 {
 
 .button {
 	padding: 5px;
-	margin-top: 5px;
+	margin: 0 auto;
 }
 
 .score {
-	height: 20px;
+	height: 150px;
 	width: 150px;
-	padding-bottom: 100px;
+	margin: 0 auto;
+	font-family: 'Poiret One', bold;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 

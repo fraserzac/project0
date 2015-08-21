@@ -1,6 +1,7 @@
 var playCounter = 0;
 var currentMove = "X";
 
+	//////////click function///////////
 
 $('.box').click(function(){
 	if (currentMove === "O") {
@@ -11,10 +12,26 @@ $('.box').click(function(){
 		$(this).data("player", currentMove);
 	}	
 
-	isWinner()
-	swapPlayer()
+	isWinner();
+	swapPlayer();
+	updateoCounter();
+	updatexCounter();
 
 });
+
+var updateoCounter = function() {
+	$('#oCounter').text(playCounter);
+	console.log(playCounter)
+
+};
+
+// var updatexCounter = function() {
+// 	$('#xCounter').text(playCounter);
+// 	console.log(playCounter)
+
+// };
+
+	/////////swap player function/////////
 
 var swapPlayer = function () {
 	if (playCounter % 2 === 0) {
@@ -23,18 +40,13 @@ var swapPlayer = function () {
 		currentMove = "X";
 	}
 
-	playCounter++;
+		playCounter++;
 };
 
 
-// var computer = function( currentMove ) {
-//     if (currentMove = "player-o") {
-       
-//     }
-// };
 
 
-///////////player data and function/////////////
+	///////////player data and function/////////////
 
 var isWinner = function() {
 	var firstBox = $('#A1').data('player')
@@ -47,17 +59,11 @@ var isWinner = function() {
 	var eighthBox = $('#A8').data('player')
 	var ninthBox = $('#A9').data('player')
 
-var Ai = function() {
-	if ('.box' === currentMove && secondBox !== undefined)
-		alert(currentMove + "wwww")
-
-}	
-
 
 	////////winning possibilities///////
 
 	if (firstBox === secondBox && secondBox === thirdBox && thirdBox !== undefined) {
-		console.log("x is the winner")
+		console.log(" is the winner")
 		alert(currentMove + " is the Winner")
 	} else if ( fourthBox === fifthBox && sixthBox === fifthBox && sixthBox !== undefined ) {
 		alert(currentMove + " is the Winner")
